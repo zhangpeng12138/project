@@ -3,7 +3,7 @@
 <body>
 Hello World!<br/>
 <%
-out.println("Your IP address is " + request.getRemoteAddr());
+out.println("你的ip是：" + request.getRemoteAddr());
 %>
 </body>
 </html>

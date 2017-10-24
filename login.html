@@ -9,5 +9,17 @@
 <input type="text" name="name"><br>
 <input type="text" name="pwd"><br>
 <input type="submit" value="登陆">
+<script>
+    $("input[type='submit']").click(function () {
+        $.ajax({
+            type:"POST",
+            url:"http://192.168.1.129:8080/login.jsp",
+            data:{name:$("input[name='name']").val(),pwd:$("input[name='pwd']").val()},
+            success:function (data) {
+                alert(data)
+            }
+        })
+    })
+</script>
 </body>
 </html>
